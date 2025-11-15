@@ -14,7 +14,7 @@ export default function FeedbackSection() {
       content: 'Fulfilled direction use continual set him propriety continued. Saw met applauded favorite deficient engrossed concealed and her. Concluded boy perpetual old supposing. Farther related bed and passage comfort civilly. Dash woods see frankness objection abilities hire alteration it favorable appearance up.',
       rating: 5,
       mediaType: 'video',
-      mediaSrc: '/video/feedback1.mp4'
+      mediaSrc: '/Video/feedback1.mp4'
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ export default function FeedbackSection() {
       content: 'Supposing so be resolving breakfast am or perfectly. It drew a hill from me. Valley by oh twenty direct me so. Departure defective arranging rapturous did believe him all had supported. Family months lasted simple set nature vulgar him. Picture for attempt joy excited ten carried manners talking how.',
       rating: 5,
       mediaType: 'image',
-      mediaSrc: '/images/feedback2.jpg'
+      mediaSrc: '/Images/feedback2.jpg'
     },
   ]
 

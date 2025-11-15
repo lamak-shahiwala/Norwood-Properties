@@ -17,7 +17,7 @@ export default function PropertiesSection() {
       bath: 3,
       bed: 2,
       price: '$24,458 USD',
-      image: '/images/haig-property.webp'
+      image: '/Images/haig-property.webp'
     },
     {
       id: 'myrtle-pool-house',
@@ -28,7 +28,7 @@ export default function PropertiesSection() {
       bath: 4,
       bed: 3,
       price: '$32,500 USD',
-      image: '/images/myrtle-property.webp'
+      image: '/Images/myrtle-property.webp'
     },
     {
       id: 'clifton',
@@ -39,7 +39,7 @@ export default function PropertiesSection() {
       bath: 2,
       bed: 2,
       price: '$19,800 USD',
-      image: '/images/clifton-property.webp'
+      image: '/Images/clifton-property.webp'
     },
     {
       id: 'sidney-house',
@@ -50,7 +50,7 @@ export default function PropertiesSection() {
       bath: 3,
       bed: 3,
       price: '$28,900 USD',
-      image: '/images/sidney-property.webp'
+      image: '/Images/sidney-property.webp'
     },
     {
       id: 'sweetman',
@@ -61,7 +61,7 @@ export default function PropertiesSection() {
       bath: 2,
       bed: 3,
       price: '$14,900 USD',
-      image: '/images/clifton-property.webp'
+      image: '/Images/clifton-property.webp'
     }
   ];
 

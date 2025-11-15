@@ -6,9 +6,9 @@ import { Location } from "@/types/location";
 
 export default function PropertySlider() {
   const locations: Location[] = [
-    { id: 'los-angeles', name: 'Los Angeles', image: '/images/myrtle-property.webp' },
-    { id: 'north-junction', name: 'North Junction', image: '/images/sidney-property.webp' },
-    { id: 'dubai', name: 'Dubai', image: '/images/clifton-property.webp' },
+    { id: 'los-angeles', name: 'Los Angeles', image: '/Images/myrtle-property.webp' },
+    { id: 'north-junction', name: 'North Junction', image: '/Images/sidney-property.webp' },
+    { id: 'dubai', name: 'Dubai', image: '/Images/clifton-property.webp' },
   ];
 
   const infiniteLocations = React.useMemo(() => [...locations, ...locations, ...locations], [locations]);

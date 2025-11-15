@@ -31,7 +31,7 @@ export default function IntroSection() {
             <div className="relative">
               <div className="relative inline-block ml-0 lg:ml-28">
                 <Image
-                  src="/images/myrtle-property.webp"
+                  src="/Images/myrtle-property.webp"
                   alt="Modern property"
                   width={514}
                   height={484}

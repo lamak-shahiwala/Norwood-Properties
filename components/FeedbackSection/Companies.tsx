@@ -3,11 +3,11 @@ import { motion } from 'framer-motion'
 
 export default function Companies() {
   const companies = [
-    { name: 'SnapShot', logo: '/images/company-1.webp' },
-    { name: 'umbrella', logo: '/images/company-2.webp' },
-    { name: 'Leafe', logo: '/images/company-3.webp' },
-    { name: 'Greenish', logo: '/images/company-4.webp' },
-    { name: 'Sitemark', logo: '/images/company-5.webp' }
+    { name: 'SnapShot', logo: '/Images/company-1.webp' },
+    { name: 'umbrella', logo: '/Images/company-2.webp' },
+    { name: 'Leafe', logo: '/Images/company-3.webp' },
+    { name: 'Greenish', logo: '/Images/company-4.webp' },
+    { name: 'Sitemark', logo: '/Images/company-5.webp' }
   ]
   const directions = ['left', 'right', 'top', 'bottom']
 
