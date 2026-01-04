@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nestora - By Lamak",
-  description: "Landing page built for Appsrow assignment by Lamak",
+  title: "Norwood Properties",
+  description:
+    "Norwood Properties is a demo real estate landing page built by ...",
 };
 
 export default function RootLayout({
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <meta name="apple-mobile-web-app-title" content="Nestora" />
+        <meta name="apple-mobile-web-app-title" content="Norwood Properties" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
