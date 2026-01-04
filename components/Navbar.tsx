@@ -1,40 +1,44 @@
-'use client'
+"use client";
 
-import { useEffect, useRef, useState } from 'react'
-import { HiOutlineMenu, HiX } from 'react-icons/hi'
+import { useEffect, useRef, useState } from "react";
+import { HiOutlineMenu, HiX } from "react-icons/hi";
 
 export default function Navbar() {
-  const [open, setOpen] = useState(false)
-  const menuBtnRef = useRef<HTMLButtonElement | null>(null)
-  const panelRef = useRef<HTMLDivElement | null>(null)
+  const [open, setOpen] = useState(false);
+  const menuBtnRef = useRef<HTMLButtonElement | null>(null);
+  const panelRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === 'Escape') setOpen(false)
+      if (e.key === "Escape") setOpen(false);
     }
     function onClick(e: MouseEvent) {
-      if (!open) return
-      if (panelRef.current && !panelRef.current.contains(e.target as Node) &&
-          menuBtnRef.current && !menuBtnRef.current.contains(e.target as Node)) {
-        setOpen(false)
+      if (!open) return;
+      if (
+        panelRef.current &&
+        !panelRef.current.contains(e.target as Node) &&
+        menuBtnRef.current &&
+        !menuBtnRef.current.contains(e.target as Node)
+      ) {
+        setOpen(false);
       }
     }
-    document.addEventListener('keydown', onKey)
-    document.addEventListener('click', onClick)
+    document.addEventListener("keydown", onKey);
+    document.addEventListener("click", onClick);
     return () => {
-      document.removeEventListener('keydown', onKey)
-      document.removeEventListener('click', onClick)
-    }
-  }, [open])
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("click", onClick);
+    };
+  }, [open]);
 
   useEffect(() => {
     if (!open) {
-      menuBtnRef.current?.focus()
+      menuBtnRef.current?.focus();
     } else {
-      const first = panelRef.current?.querySelector<HTMLElement>('a,button')
-      first?.focus()
+      const first = panelRef.current?.querySelector<HTMLElement>("a,button");
+      first?.focus();
     }
-  }, [open])
+  }, [open]);
 
   return (
     <nav className="sticky top-0 z-40">
@@ -43,7 +47,10 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-14">
             <div className="flex items-center gap-6">
               <div className="text-2xl font-semibold">
-                NESTORA<span className="text-white/90"><sup>+</sup></span>
+                Norwood Properties
+                <span className="text-white/90">
+                  <sup>+</sup>
+                </span>
               </div>
 
               <div className="hidden md:flex items-center gap-3">
@@ -54,10 +61,21 @@ export default function Navbar() {
             </div>
 
             <div className="hidden sm:flex items-center gap-8 text-sm uppercase tracking-wider">
-              <a className="hidden sm:inline-block hover:underline" href="#properties">Properties</a>
-              <a className="hidden sm:inline-block hover:underline" href="">Studio</a>
-              <a className="hidden sm:inline-block hover:underline" href="">Process</a>
-              <button aria-label="add property" className="px-2">+ADD PROPERTY</button>
+              <a
+                className="hidden sm:inline-block hover:underline"
+                href="#properties"
+              >
+                Properties
+              </a>
+              <a className="hidden sm:inline-block hover:underline" href="">
+                Studio
+              </a>
+              <a className="hidden sm:inline-block hover:underline" href="">
+                Process
+              </a>
+              <button aria-label="add property" className="px-2">
+                +ADD PROPERTY
+              </button>
             </div>
 
             <div className="flex items-center gap-2 sm:hidden">
@@ -65,11 +83,15 @@ export default function Navbar() {
                 ref={menuBtnRef}
                 aria-controls="mobile-menu"
                 aria-expanded={open}
-                aria-label={open ? 'Close menu' : 'Open menu'}
-                onClick={() => setOpen(v => !v)}
+                aria-label={open ? "Close menu" : "Open menu"}
+                onClick={() => setOpen((v) => !v)}
                 className="p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-white/30"
               >
-                {open ? <HiX className="w-6 h-6" /> : <HiOutlineMenu className="w-6 h-6" />}
+                {open ? (
+                  <HiX className="w-6 h-6" />
+                ) : (
+                  <HiOutlineMenu className="w-6 h-6" />
+                )}
               </button>
             </div>
           </div>
@@ -80,29 +102,55 @@ export default function Navbar() {
         id="mobile-menu"
         ref={panelRef}
         className={`sm:hidden bg-brand-orange text-white transition-[max-height,opacity,transform] duration-300 ease-out overflow-hidden ${
-          open ? 'max-h-[500px] opacity-100 transform-none' : 'max-h-0 opacity-0 -translate-y-2'
+          open
+            ? "max-h-[500px] opacity-100 transform-none"
+            : "max-h-0 opacity-0 -translate-y-2"
         }`}
         aria-hidden={!open}
       >
         <div className="px-6 pt-4 pb-6">
           <div className="flex flex-col gap-4">
-            <a href="#properties" onClick={() => setOpen(false)} className="block text-base uppercase tracking-wider hover:underline">Properties</a>
-            <a href="" onClick={() => setOpen(false)} className="block text-base uppercase tracking-wider hover:underline">Studio</a>
-            <a href="" onClick={() => setOpen(false)} className="block text-base uppercase tracking-wider hover:underline">Process</a>
+            <a
+              href="#properties"
+              onClick={() => setOpen(false)}
+              className="block text-base uppercase tracking-wider hover:underline"
+            >
+              Properties
+            </a>
+            <a
+              href=""
+              onClick={() => setOpen(false)}
+              className="block text-base uppercase tracking-wider hover:underline"
+            >
+              Studio
+            </a>
+            <a
+              href=""
+              onClick={() => setOpen(false)}
+              className="block text-base uppercase tracking-wider hover:underline"
+            >
+              Process
+            </a>
             <button
-              onClick={() => { setOpen(false);}}
+              onClick={() => {
+                setOpen(false);
+              }}
               className="mt-2 text-left py-2 px-3 bg-white/10 rounded-sm"
             >
               +ADD PROPERTY
             </button>
 
             <div className="border-t border-white/10 mt-4 pt-4">
-              <div className="text-sm text-white/90">NESTORA <span className="text-white/70">• 1997</span></div>
-              <div className="mt-2 text-xs text-white/70">Discover curated residences & services</div>
+              <div className="text-sm text-white/90">
+                Norwood Properties <span className="text-white/70">• 1997</span>
+              </div>
+              <div className="mt-2 text-xs text-white/70">
+                Discover curated residences & services
+              </div>
             </div>
           </div>
         </div>
       </div>
     </nav>
-  )
+  );
 }

@@ -1,4 +1,4 @@
-import { IoArrowForward } from 'react-icons/io5';
+import { IoArrowForward } from "react-icons/io5";
 
 export default function Footer() {
   return (
@@ -7,25 +7,42 @@ export default function Footer() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24">
           <div className="space-y-8">
             <nav className="space-y-4">
-              <div className="text-sm font-light tracking-wide"><a href='#properties'>PROPERTIES</a></div>
-              <div className="text-sm font-light"><a href=''>STUDIO</a></div>
-              <div className="text-sm font-light"><a href=''>PROCESS</a></div>
+              <div className="text-sm font-light tracking-wide">
+                <a href="#properties">PROPERTIES</a>
+              </div>
+              <div className="text-sm font-light">
+                <a href="">STUDIO</a>
+              </div>
+              <div className="text-sm font-light">
+                <a href="">PROCESS</a>
+              </div>
               <div className="text-sm font-light">+ADD PROPERTY</div>
             </nav>
-            
+
             <div className="pt-4">
               <div className="text-sm font-light mb-4">(info)</div>
               <div className="space-y-2 text-sm">
-                <div><span className="font-medium">P:</span> +44 (445) 578 996</div>
-                <div><span className="font-medium">E:</span> example@gmail.com</div>
-                <div><span className="font-medium">A:</span> 101 Days Rd, Grange QLD 4051</div>
+                <div>
+                  <span className="font-medium">P:</span> +44 (445) 578 996
+                </div>
+                <div>
+                  <span className="font-medium">E:</span> example@gmail.com
+                </div>
+                <div>
+                  <span className="font-medium">A:</span> 101 Days Rd, Grange
+                  QLD 4051
+                </div>
               </div>
             </div>
 
             <div className="text-xs font-light pt-4">
-              <a href="#" className="hover:underline">Privacy Policy</a>
-              {' / '}
-              <a href="#" className="hover:underline">Terms and Conditions</a>
+              <a href="#" className="hover:underline">
+                Privacy Policy
+              </a>
+              {" / "}
+              <a href="#" className="hover:underline">
+                Terms and Conditions
+              </a>
             </div>
           </div>
 
@@ -37,7 +54,8 @@ export default function Footer() {
                 Sent to You.
               </h1>
               <p className="text-sm font-light max-w-md">
-                Meant balls it if up doubt small purse. Required his you put the outlived answered position.
+                Meant balls it if up doubt small purse. Required his you put the
+                outlived answered position.
               </p>
             </div>
 
@@ -56,7 +74,10 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 flex flex-col md:flex-row justify-between items-center gap-8">
           <div className="text-7xl md:text-8xl lg:text-9xl font-light tracking-tight">
-            NESTORA<sup className="relative -top-9 md:-top-10 lg:-top-16 text-4xl md:text-6xl font-extralight">+</sup>
+            Norwood Properties
+            <sup className="relative -top-9 md:-top-10 lg:-top-16 text-4xl md:text-6xl font-extralight">
+              +
+            </sup>
           </div>
           <div>
             <div className="hidden md:flex items-center gap-3">
@@ -66,7 +87,8 @@ export default function Footer() {
             </div>
             <div className="text-right pt-4">
               <div className="text-xs font-light">
-                © Copyright {new Date().getFullYear()} NESTORA all rights reserved.
+                © Copyright {new Date().getFullYear()} Norwood Properties all
+                rights reserved.
               </div>
             </div>
           </div>
