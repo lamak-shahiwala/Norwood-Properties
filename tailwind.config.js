@@ -8,13 +8,14 @@ module.exports = {
     extend: {
       colors: {
         brand: {
-          orange: '#FF6614'
+          orange: '#0F1E2D'
         },
         bg: {
-          sheet: '#EDEBEB'
+          sheet: '#FFFFFF'
         }
       },
       fontFamily: {
+        serif: ['"Playfair Display"', 'serif'],
         helvetica: ['"Helvetica Neue"', 'Helvetica', 'Arial', 'sans-serif'],
       },
     }
